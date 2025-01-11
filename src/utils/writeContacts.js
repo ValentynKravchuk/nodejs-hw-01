@@ -6,6 +6,6 @@ export const writeContacts = async (updatedContacts) => {
   try {
     await fs.writeFile(PATH_DB, data, 'utf8');
   } catch (error) {
-    console.log('Помилка запису у файл:', error);
+    console.log(error);
   }
 };
