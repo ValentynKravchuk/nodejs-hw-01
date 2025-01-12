@@ -6,6 +6,7 @@ export const removeLastContact = async () => {
     const allContacts = await readContacts();
     const updatedContacts = allContacts.slice(0, allContacts.length - 1);
     await writeContacts(updatedContacts);
+    console.log('Last contact removed successfully.');
   } catch (error) {
     console.log(error);
   }
