@@ -10,7 +10,7 @@ const generateContacts = async (number) => {
       newContacts.push(createFakeContact());
     }
     await writeContacts([...contacts, ...newContacts]);
-    console.log('Contacts generated successfully.');
+    console.log(`${number} Contacts generated successfully.`);
   } catch (error) {
     console.log(error);
   }
